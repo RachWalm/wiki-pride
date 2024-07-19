@@ -1,5 +1,16 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
-def home(request):
-    return HttpResponse("Welcome to Wiki Pride!")
+
+def index(request):
+    return render(request, 'index.html')
+
+def comingout(request):
+    return render(request, 'comingout.html')
+def community(request):
+    return render(request, 'community.html')
+
+def culture(request):
+    return render(request, 'culture.html')
+
+def history(request):
+    return render(request, 'history.html')
