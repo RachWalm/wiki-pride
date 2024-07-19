@@ -1,0 +1,22 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Base Page{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'comingout' %}">Coming Out</a></li>
+            <li><a href="{% url 'community' %}">Community</a></li>
+            <li><a href="{% url 'culture' %}">Culture</a></li>
+            <li><a href="{% url 'history' %}">History</a></li>
+        </ul>
+    </nav>
+    {% block content %}{% endblock%}
+  </body>
+</html>
