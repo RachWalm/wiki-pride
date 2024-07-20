@@ -1,6 +1,23 @@
 
-body{
-    background-color: aqua;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navigation bar*/
+
+.header {
+  width: 100%;
+  background-image: linear-gradient(to right,#de6262, #ffb88c);
+}
+.navbar-brand {
+  color: white;
+}
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: #FF9F55;
 }
 
 /* The history timeline (the vertical ruler) */
