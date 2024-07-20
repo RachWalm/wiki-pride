@@ -19,7 +19,20 @@
 .nav-link:hover {
   color: #FF9F55;
 }
-
+/* Footer */
+.footer {
+  background-image: linear-gradient(to right, #de6262, #ffb88c);
+  color: white;
+  padding: 20px 0;
+}
+.footer .social-icon {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+.footer .social-icon:hover {
+  color: #ffb88c;
+}
 /* The history timeline (the vertical ruler) */
 .timeline {
     position: relative;
