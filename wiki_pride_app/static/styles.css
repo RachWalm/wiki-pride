@@ -1,8 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
-    background-color: aqua;
+:root {
+  --clr-background: snow;
+  --clr-card: white;
+  --clr-text: #1e1e1e;
+  --clr-accent1: red;
+  --clr-accent2: orange;
+  --clr-accent3: yellow;
+  --clr-accent4: green;
+  --clr-accent5: blue;
+  --clr-accent6: purple;
+  --clr-shadow: rgba(0.2, 0.2, 0.2, 0.5)
 }
 
+/* General reset and font-family setup*/
+* {
+  /*position*/
+  margin: 0;
+  padding: 0;
+
+  /*dimensions*/
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1800px;
+
+  /*box*/
+  background-color: var(--clr-background);
+
+  /*text*/
+  font-family: "Comfortaa", sans-serif;
+  color: var(--clr-text);
+  text-decoration:none;
+}
+
+body{
+}
+
+#landing {
+
+  /*position*/
+  padding: 3rem;
+
+  /*text*/
+  text-align:center;
+} 
+
+#landing-title {
+
+
+  /*text*/
+  font-size: 10rem;
+
+}
+
+#landing-slogan {
+
+  /*text*/
+  font-size: 5rem;
+}
+
+#landing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card-container {
+  /*position*/
+  padding: 1rem;
+
+  /*dimensions*/
+  min-height: 300px;
+  max-width: 300px;
+
+  /*flex-box*/
+  display: flex;
+
+  /*text*/
+  vertical-align: bottom;
+
+  /*box*/
+  background-color: var(--clr-card);
+  border: var(--clr-accent1) 2px solid;
+  border-radius: 15px;
+  box-shadow: 0px 10px 5px 2px var(--clr-shadow);
+}
 /* The history timeline (the vertical ruler) */
 .timeline {
     position: relative;
