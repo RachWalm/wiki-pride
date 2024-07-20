@@ -15,6 +15,8 @@
 
 ### Potential Future Feature Developments 
 
+#### Social interactions
+
 
 ## Bugs
 
