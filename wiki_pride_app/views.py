@@ -12,5 +12,5 @@ def community(request):
 def culture(request):
     return render(request, 'culture.html')
 
-def history(request):
-    return render(request, 'history.html')
+def gettoknow(request):
+    return render(request, 'gettoknow.html')
