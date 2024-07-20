@@ -7,5 +7,5 @@ urlpatterns = [
     path('comingout/', views.comingout, name='comingout'),
     path('community/', views.community, name='community'),
     path('culture/', views.culture, name='culture'),
-    path('history/', views.history, name='history'),
+    path('gettoknow/', views.gettoknow, name='gettoknow'),
 ]
