@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --clr-background: snow;
@@ -21,14 +20,12 @@
   --box-shadow-md: 0 3px 6px rgba(0, 0, 0, 0.16);
   --box-shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.19);
 
-  --font-primary: "Montserrat Alternates", Arial, sans-serif;
-  --font-secondary: "Hind";
+  --font-primary: 'Jost', Arial, sans-serif;
+  --font-secondary: 'Georgia', serif;
 
   --font-size-base: 16px;
   --font-size-small: 14px;
   --font-size-large: 18px;
-  --font-size-main: 60px;
-  --font-size-slogan: 40px;
 
   --line-height-base: 1.5;
   --line-height-tight: 1.2;
@@ -101,64 +98,6 @@
 }
 .footer .social-icon:hover {
   color: orange;
-}
-body{
-}
-
-#landing {
-
-  /*position*/
-  padding: 3rem;
-
-  /*text*/
-  text-align:center;
-} 
-
-#landing-title {
-
-
-  /*text*/
-  font-family: var(--font-primary);
-  font-size: 10rem;
-
-}
-
-#landing-slogan {
-
-  /*text*/
-  font-size: 5rem;
-}
-
-#landing-cards {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.card-container {
-  /*position*/
-  padding: 1rem;
-
-  /*dimensions*/
-  min-height: 300px;
-  max-width: 300px;
-
-  /*flex-box*/
-  display: flex;
-
-  /*text*/
-  vertical-align: bottom;
-
-  /*box*/
-  background-color: var(--clr-card);
-  border: var(--clr-accent1) 2px solid;
-  border-radius: 25px;
-  box-shadow: 0px 10px 5px 2px var(--clr-shadow);
-}
-
-#join-button {
-  border: var(--clr-accent1) 2px solid;
-  border-radius: 15px;
 }
 /* The history timeline (the vertical ruler) */
 .timeline {
