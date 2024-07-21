@@ -1,8 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --clr-background: snow;
+  --clr-card: white;
+  --clr-text: #1e1e1e;
+  --clr-accent1: red;
+  --clr-accent2: orange;
+  --clr-accent3: yellow;
+  --clr-accent4: green;
+  --clr-accent5: blue;
+  --clr-accent6: purple;
+  --clr-shadow: rgba(0.2, 0.2, 0.2, 0.5)
+
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+
+  --box-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+  --box-shadow-md: 0 3px 6px rgba(0, 0, 0, 0.16);
+  --box-shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.19);
+
+  --font-primary: 'Jost', Arial, sans-serif;
+  --font-secondary: 'Georgia', serif;
+
+  --font-size-base: 16px;
+  --font-size-small: 14px;
+  --font-size-large: 18px;
+
+  --line-height-base: 1.5;
+  --line-height-tight: 1.2;
+}
+
+/* General reset and font-family setup*/
+* {
+  /*position*/
+  margin: 0;
+  padding: 0;
+
+  /*dimensions*/
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1800px;
+
+  /*box*/
+  background-color: var(--clr-background);
+
+  /*text*/
+  font-family: var(--font-secondary);
+  color: var(--clr-text);
+  text-decoration:none;
+}
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 /* Navigation bar*/
 

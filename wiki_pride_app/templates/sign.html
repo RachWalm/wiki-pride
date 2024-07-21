@@ -2,28 +2,29 @@
 {% load static %}
 {% block content %}
 <body>
-    <div class="container">
+    <section class="container">
         <div class="form-container">
             <h1>Sign Up</h1>
-            <form>
-                <label for="username">Username</label>
+            <form method="POST" action="" target="_blank">
+                <label class="form-label" for="username">Username</label>
                 <input type="text" id="username" name="username" required>
                 
-                <label for="email">Email Address</label>
+                <label class="form-label"for="email">Email Address</label>
                 <input type="email" id="email" name="email" required>
                 
-                <label for="password">Password</label>
+                <label class="form-label"for="password">Password</label>
                 <input type="password" id="password" name="password" required>
                 
-                <label for="confirm-password">Confirm Password</label>
+                <label class="form-label"for="confirm-password">Confirm Password</label>
                 <input type="password" id="confirm-password" name="confirm-password" required>
                 
-                <button type="submit" class="submit-btn">Sign Up</button>
+                <button type="submit" class="submit-btn">Join the Pride</button>
             </form>
         </div>
         <div class="profile-container">
             <img src="path_to_profile_image.jpg" alt="Profile Picture">
-            <p>Join the Pride</p>
+            
         </div>
-    </div>
+    </section>
+</body>
     {% endblock %}
