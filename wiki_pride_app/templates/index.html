@@ -4,13 +4,16 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<header>
-    <h1 class="landing-title">WIKI-PRIDE</h1>
-    <h2 class="landing-slogan">BE PART OF THE MOVE</h2>
-    <a href="" aria-label="access the sign up form">JOIN US!</a>
-</header>
+<body>
 <main>
-    <section>
+
+    <section id="landing">
+        <h1 id="landing-title">WIKI-PRIDE</h1>
+        <h2 id="landing-slogan">BE PART OF THE MOVE</h2>
+        <a id="join-button" href="" aria-label="access the sign up form">JOIN US!</a>
+    </section>
+
+    <section id="landing-cards">
         <div class="card-container">
             <a href="" aria-label="navigate to the 'get to know' webpage">
                 <h3 class="card-title">GET TO KNOW</h3>
@@ -43,4 +46,5 @@
         </div>
     </section>
 </main>
+</body>
 {% endblock %}
