@@ -8,30 +8,51 @@
 
 .header {
   width: 100%;
-  background-image: linear-gradient(to right,#de6262, #ffb88c);
+  height: 90px;
+  background-image: linear-gradient(to right,red, lightblue);
 }
 .navbar-brand {
   color: white;
 }
 .nav-link {
-  color: white;
+  text-decoration: none;
+  position: relative;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+
 }
-.nav-link:hover {
-  color: #FF9F55;
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px; /* You can adjust the thickness of the underline */
+  left: 0;
+  bottom: -2px; /* Position the underline just below the text */
+  background-color: orange; /* Color of the underline */
+  transition: width 0.3s; /* Animation effect */
 }
+
+.nav-link:hover::after {
+  width: 100%;
+}
+/* .nav-link:hover {
+  background-color: orange;
+} */
 /* Footer */
 .footer {
-  background-image: linear-gradient(to right, #de6262, #ffb88c);
+  background-image: linear-gradient(to right, purple, lightblue);
   color: white;
   padding: 20px 0;
 }
 .footer .social-icon {
   margin: 0 10px;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 .footer .social-icon:hover {
-  color: #ffb88c;
+  color: orange;
 }
 /* The history timeline (the vertical ruler) */
 .timeline {
