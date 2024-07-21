@@ -18,3 +18,6 @@ def sign(request):
 
 def events(request):
     return render(request, 'events.html')
+
+def feature(request):
+    return render(request, 'feature.html')
