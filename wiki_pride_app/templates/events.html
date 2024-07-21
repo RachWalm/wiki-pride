@@ -1,5 +1,37 @@
+
+
 {% extends "base.html" %}
+{% load static %}
+
+
 {% block content %}
-<h1>Events</h1>
-<p>test</p>
+<body>
+    <header class="title-container">
+        <h1 class="page-title">Events</h1>
+        {% comment %} <a id="add-remove-container" href="{% url 'add_remove_events' %}"> {% endcomment %}
+            <h2 id="add-remove-text">Add/Remove</h2>
+            <i class="fa fa-plus"></i>  <!-- Adjust icon as needed -->
+        </a>
+    </header>
+    <main>
+      <section class="event-grid">
+        {% for event in events %}
+        <div class="card-container">
+            <img src="{% static 'default-event-image.jpg' %}" alt="Event picture">  <!-- Use a placeholder image if no image is provided -->
+            <h3 class="card-title">{{ event.title }}</h3>
+            <p class="card-text">{{ event.description }}</p>
+            <p class="card-date">
+                {% if event.time %}
+                    {{ event.date }} at {{ event.time }}
+                {% else %}
+                    {{ event.date }}
+                {% endif %}
+            </p>
+        </div>
+        {% empty %}
+        <p>No events available.</p>
+        {% endfor %}
+      </section>
+    </main>
+</body>
 {% endblock %}
