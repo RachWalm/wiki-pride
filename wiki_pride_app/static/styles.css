@@ -54,6 +54,9 @@
   text-decoration:none;
 }
 
+html {
+  background-color: var(--clr-background);
+}
 body{ 
  
 }
@@ -110,7 +113,7 @@ body{
 
 .card-container {
   /*position*/
-  padding: 1rem;
+  padding: 0.5rem;
 
   /*dimensions*/
   min-height: 150px;
@@ -118,9 +121,9 @@ body{
 
   /*flex-box*/
   display: flex;
+  align-items: flex-end;
 
   /*text*/
-  vertical-align: bottom;
 
   /*box*/
   background-color: var(--clr-card);
