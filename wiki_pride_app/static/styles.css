@@ -11,6 +11,24 @@
   --clr-accent5: blue;
   --clr-accent6: purple;
   --clr-shadow: rgba(0.2, 0.2, 0.2, 0.5)
+
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+
+  --box-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+  --box-shadow-md: 0 3px 6px rgba(0, 0, 0, 0.16);
+  --box-shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.19);
+
+  --font-primary: 'Jost', Arial, sans-serif;
+  --font-secondary: 'Georgia', serif;
+
+  --font-size-base: 16px;
+  --font-size-small: 14px;
+  --font-size-large: 18px;
+
+  --line-height-base: 1.5;
+  --line-height-tight: 1.2;
 }
 
 /* General reset and font-family setup*/
@@ -28,7 +46,7 @@
   background-color: var(--clr-background);
 
   /*text*/
-  font-family: "Comfortaa", sans-serif;
+  font-family: var(--font-secondary);
   color: var(--clr-text);
   text-decoration:none;
 }
@@ -49,6 +67,7 @@ body{
 
 
   /*text*/
+  font-family: var(--font-primary);
   font-size: 10rem;
 
 }
@@ -82,8 +101,13 @@ body{
   /*box*/
   background-color: var(--clr-card);
   border: var(--clr-accent1) 2px solid;
-  border-radius: 15px;
+  border-radius: 25px;
   box-shadow: 0px 10px 5px 2px var(--clr-shadow);
+}
+
+#join-button {
+  border: var(--clr-accent1) 2px solid;
+  border-radius: 15px;
 }
 /* The history timeline (the vertical ruler) */
 .timeline {
