@@ -5,9 +5,6 @@ from .models import Event
 def index(request):
     return render(request, 'index.html')
 
-def community(request):
-    return render(request, 'community.html')
-
 def gettoknow(request):
     return render(request, 'gettoknow.html')
 
