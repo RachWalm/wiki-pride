@@ -52,7 +52,6 @@ html {
   background-color: var(--clr-background);
   height: 100%;
 }
-
 body {
   /*box*/
   background-color: var(--clr-background);
@@ -64,12 +63,12 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 .header {
   width: 100%;
   height: 90px;
+  background-color: var(--clr-background);
+  z-index: 99;
 }
-
 .nav-link {
   position: relative;
   font-size: var(--font-size-base);
@@ -85,17 +84,14 @@ body {
   background-color: var(--clr-accent2); /* Color of the underline */
   transition: width 0.3s; /* Animation effect */
 }
-
 .nav-link:hover::after {
   width: 100%;
 }
-
 /* Footer */
 .footer {
 padding: 20px 0;
 text-align: center;
 }
-
 .footer .social-icon {
   margin: 0 10px;
   color: var(--clr-text);
@@ -104,7 +100,6 @@ text-align: center;
 .footer .social-icon:hover {
   color: orange;
 }
-
 main {
   flex: 1; /* Takes up remaining space */
   padding: 30px 90px;
@@ -119,22 +114,21 @@ main {
   flex-direction: column;
   height: auto;
   min-height: 50vh;
+  align-items:flex-end;
 }
-
 #landing-title {
   font-family: var(--font-primary);
   font-size: var(--font-size-big-title);
   padding: 5%;
 }
-
 #landing-slogan {
   font-size: var(--font-size-sub-title);
   display: flex;
   justify-content: center;
 }
-
 #join-button {
   margin: 0 auto;
+  padding: 2%;
   background-color: var(--clr-card);
   text-decoration: none;
   font-size: var(--font-size-main);
@@ -146,12 +140,10 @@ main {
   transition: 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 #join-button:hover {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
   transform: scale(1.05);
 }
-
 #landing-cards {
   display: flex;
   justify-content: center;
@@ -159,7 +151,6 @@ main {
   padding: 5%;
   gap: 1rem;
 }
-
 .card-container {
   min-height: 150px;
   width: 250px;
@@ -170,16 +161,44 @@ main {
   padding: 0.5rem;
   border-radius: var(--border-radius-lg);
   transition: 0.3s ease;
+  flex-direction: column;
 }
-
 .card-container:hover {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
   transform: scale(1.05);
 }
 
-#card-gettoknow {
+.page-title {
+  font-size: var(--font-size-big-title);
+  font-family: var(--font-primary);
 }
 
+.gettoknow-section {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 1%;
+}
+
+#gettoknow-section1 {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+#gettoknow-section2 {
+  background-color: rgba(255, 170, 0, 0.3);
+}
+
+#gettoknow-section3 {
+  background-color: rgba(246, 255, 0, 0.3);
+}
+
+.title {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-sub-title);
+  padding: 10px;
+}
 /* The history timeline (the vertical ruler) */
 .timeline {
   position: relative;
@@ -257,6 +276,22 @@ main {
   border: medium solid white;
   border-width: 10px 10px 10px 0;
   border-color: transparent white transparent transparent;
+}
+#add-remove-text {
+  padding: 0 5%;
+}
+
+.fa.fa-plus {
+  padding: 0 5%;
+}
+#event-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 1%;
 }
 
 /* Fix the circle for containers on the right side */

@@ -7,7 +7,7 @@
 {% block content %}
 <body>
     <header class="title-container">
-        <h1 class="page-title">Events</h1>
+        <h1 class="page-title">Events.</h1>
         {% comment %} <a id="add-remove-container" href="{% url 'add_remove_events' %}"> {% endcomment %}
             <h2 id="add-remove-text">Add/Remove</h2>
             <i class="fa fa-plus"></i>  <!-- Adjust icon as needed -->
@@ -31,6 +31,28 @@
         {% empty %}
         <p>No events available.</p>
         {% endfor %}
+      </section>
+      <section id="event-cards">
+        <div class="card-container">
+            <img src="" aria-label="">
+            <h3 class="card-title">ABCDE</h3>
+            <p class="card-text">00/00/0000</p>
+        </div>
+        <div class="card-container">
+            <img src="" aria-label="">
+            <h3 class="card-title">ABCDE</h3>
+            <p class="card-text">00/00/0000</p>
+        </div>
+        <div class="card-container">
+            <img src="" aria-label="">
+            <h3 class="card-title">ABCDE</h3>
+            <p class="card-text">00/00/0000</p>
+        </div>
+        <div class="card-container">
+            <img src="" aria-label="">
+            <h3 class="card-title">ABCDE</h3>
+            <p class="card-text">00/00/0000</p>
+        </div>
       </section>
     </main>
 </body>
