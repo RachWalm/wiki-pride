@@ -1,37 +1,80 @@
 
-
-{% extends "base.html" %}
-{% load static %}
-
-
+ {% extends "base.html" %}
 {% block content %}
 <body>
     <header class="title-container">
         <h1 class="page-title">Events</h1>
-        {% comment %} <a id="add-remove-container" href="{% url 'add_remove_events' %}"> {% endcomment %}
+        <a id="add-remove-container">
             <h2 id="add-remove-text">Add/Remove</h2>
-            <i class="fa fa-plus"></i>  <!-- Adjust icon as needed -->
+            <i></i>
         </a>
     </header>
     <main>
-      <section class="event-grid">
-        {% for event in events %}
+      <section>
         <div class="card-container">
-            <img src="{% static 'default-event-image.jpg' %}" alt="Event picture">  <!-- Use a placeholder image if no image is provided -->
-            <h3 class="card-title">{{ event.title }}</h3>
-            <p class="card-text">{{ event.description }}</p>
-            <p class="card-date">
-                {% if event.time %}
-                    {{ event.date }} at {{ event.time }}
-                {% else %}
-                    {{ event.date }}
-                {% endif %}
-            </p>
+            <img src="" aria-label="event picture">
+            <h3 class="card-title">ABCDE</h3>
+            <p class="card-text">abcde fghi jklmnop qrs tuvw xyz</p>
+            <i></i>
         </div>
-        {% empty %}
-        <p>No events available.</p>
-        {% endfor %}
+
+        <div class="card-container">
+            <img src="" aria-label="event picture">
+            <h3 class="card-title">ABCDE</h3>
+            <p class="card-text">abcde fghi jklmnop qrs tuvw xyz</p>
+            <i></i>
+        </div>
+
+        <div class="card-container">
+            <img src="" aria-label="event picture">
+            <h3 class="card-title">ABCDE</h3>
+            <p class="card-text">abcde fghi jklmnop qrs tuvw xyz</p>
+            <i></i>
+        </div>
+
+        <div class="card-container">
+            <img src="" aria-label="event picture">
+            <h3 class="card-title">ABCDE</h3>
+            <p class="card-text">abcde fghi jklmnop qrs tuvw xyz</p>
+            <i></i>
+        </div>
+
+        <div class="card-container">
+            <img src="" aria-label="event picture">
+            <h3 class="card-title">ABCDE</h3>
+            <p class="card-text">abcde fghi jklmnop qrs tuvw xyz</p>
+            <i></i>
+        </div>
+
+        <div class="card-container">
+            <img src="" aria-label="event picture">
+            <h3 class="card-title">ABCDE</h3>
+            <p class="card-text">abcde fghi jklmnop qrs tuvw xyz</p>
+            <i></i>
+        </div>
+
+        <div class="card-container">
+            <img src="" aria-label="event picture">
+            <h3 class="card-title">ABCDE</h3>
+            <p class="card-text">abcde fghi jklmnop qrs tuvw xyz</p>
+            <i></i>
+        </div>
+
+        <div class="card-container">
+            <img src="" aria-label="event picture">
+            <h3 class="card-title">ABCDE</h3>
+            <p class="card-text">abcde fghi jklmnop qrs tuvw xyz</p>
+            <i></i>
+        </div>
+
+        <div class="card-container">
+            <img src="" aria-label="event picture">
+            <h3 class="card-title">ABCDE</h3>
+            <p class="card-text">abcde fghi jklmnop qrs tuvw xyz</p>
+            <i></i>
+        </div>
       </section>
+      
     </main>
 </body>
-{% endblock %}
+{% endblock %} 
