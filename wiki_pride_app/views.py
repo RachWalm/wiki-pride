@@ -18,5 +18,11 @@ def sign(request):
     return render(request, 'sign.html')
 
 def events(request):
+
     events_list = Event.objects.all()
-    return render(request, 'events.html', {'events': events_list})
+
+    return render(request, 'events.html')
+
+def feature(request):
+    return render(request, 'feature.html')
+
