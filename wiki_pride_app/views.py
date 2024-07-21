@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Event 
 
 
 def index(request):
@@ -17,4 +18,5 @@ def sign(request):
     return render(request, 'sign.html')
 
 def events(request):
-    return render(request, 'events.html')
+    events_list = Event.objects.all()
+    return render(request, 'events.html', {'events': events_list})
