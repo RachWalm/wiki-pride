@@ -118,6 +118,8 @@ We wanted this to be a bright welcoming page which was bold without clutter so t
 
 #### Events page
 
+This is a page where if groups or people want to 
+
 #### Future Feature page
 
 #### Get to know page

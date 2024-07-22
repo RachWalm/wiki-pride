@@ -4,4 +4,3 @@ node_modules/
 .github/
 cloudinary_python.txt
 venv/
-staticfiles/
