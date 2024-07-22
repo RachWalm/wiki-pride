@@ -114,30 +114,47 @@ There was the intention that these cards would be created/animated with expand e
 
 #### Landing/Index page
 
-We wanted this to be a bright welcoming page which was bold without clutter so that you could choose using the cards (or nav links) which part of the wiki you were interested in. Ultimately the wiki was going to have lots of pages and to direct someone to something specific on the landing page wasn't the aim of the site.
+We wanted this to be a bright welcoming page which was bold, without clutter, so that you could choose using the cards (or nav links) which part of the wiki you were interested in. Ultimately the wiki was going to have lots of pages and to contain something specific on the landing page wasn't the aim of the site.
 
 #### Events page
 
-This is a page where if groups or people want to 
+This is a page where if groups or people want to provide details to the administrators of the site then they can have this added with a title description and if they like a time.
 
 #### Future Feature page
 
+There were several buttons etc that were initially introduced that we didn't know if we were going to have time to complete. To ensure that every button went somewhere we produced a page that was to show that the area was under development and was a future feature.
+
 #### Get to know page
+
+This page was to provide a page that enabled someone who didn't have much knowledge of the topic to get to know what it was all about.
 
 #### Sign up page
 
+This page is designed so that when the future development of posting and timelines or blogs was introduced there was a page to do the sign up. In line with a PP1 project it is displayed but the data does not store.
+
 #### Creators page
+
+This page was an explanation of our vision and to let people know who was behind the site and what work they had contributed to the site.
 
 #### Site consistency
 
+To ensure consistency through out the site extensive wireframes were created and all pages were based on a card system layout and pride colours were use thorughout keeping it bold and bright.
+
 #### Emergency leave button
 
-
+As it is difficult for some people to browse this kind of content we provided a quick escape button which if pressed took you to google so if interrupted a person who was uncomfortable or in danger looking at the site quick removed all content from the screen replacing it with google.
 
 ### Potential Future Feature Developments 
 
+There were several pages that content was looked at that had to be dropped along the way due to time constraints that should future work be done these interesting subjects could be put on informative pages.
+
+#### Posting or blogging
+
+It would be nice if the community had a safe moderated space where they could come to chat and post on a timeline or blog. This is definitely a feature that we would have liked to be available.
+
 #### Social interactions
 
+The footer contains social links for someone feeling isolated to sign up to one of these social networks. In the future it would be good to connect them to relevant pages.
 
 ## Bugs
 
@@ -149,11 +166,15 @@ We had merge conflicts which were resolved through manually going through the co
 
 As each contributor set up their own (or several of their own - depending on the individuals preferred working method) branches, we had problems where restarts of computers or IDE's had returned them to the main branch and therefore needed to switch to their own branch again.
 
+Couldn't get CSS onto Heroku but realised that we hadn't collected the static 
 
+```python manage.py collectstatic```
 
-
+also we hadn't set up Whitenoise.
 
 ### Unsolved bugs
+
+None.
 
 ## Technologies
 
@@ -175,6 +196,8 @@ As each contributor set up their own (or several of their own - depending on the
 [ChatGPT](https://openai.com/chatgpt/) was used to generate some of the text content of the site.
 
 ### Web resources
+
+[Whitenoise](https://whitenoise.readthedocs.io/en/latest/) for the storage of static files.
 
 ## Deployment
 
@@ -271,10 +294,6 @@ To run the local deployment in the IDE terminal window :
 python3 manage.py runserver
 ```
 ## Testing 
-
-## Credits
-
-### Images
 
 ## Acknowledgements
 
