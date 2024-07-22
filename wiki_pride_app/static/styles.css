@@ -68,6 +68,9 @@ body {
   flex-direction: column;
 }
 
+
+/* Navigation bar*/
+
 .nav-container {
   /* width: 100%;
   height: 90px; */
@@ -80,12 +83,6 @@ body {
 }
 .navbar-brand {
   color: white;
-/* Navigation bar*/
-.header {
-  width: 100%;
-  height: 90px;
-  background-color: var(--clr-background);
-  z-index: 99;
 }
 .navbar-nav .navbar-toggler {
   padding-right: 20px;
@@ -93,14 +90,12 @@ body {
   border: none;
 }
 .nav-link {
-
-  position: relative;
-  font-size: var(--font-size-base);
-  display: inline-block;
-  text-decoration: none;
+  /* text-decoration: none;
+  position:relative; */
   color: black;
   font-weight: bold;
-  gap: 10px;
+  /* display: inline-block;
+  gap: 10px; */
 
 }
 .nav-link::after {
