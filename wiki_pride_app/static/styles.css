@@ -150,11 +150,12 @@ main {
   background: url('images/photos/markus-spiske-35uwVjgLVLQ-unsplash.jpg') no-repeat center/cover;
   border-radius: var(--border-radius-lg);
   display: flex;
+  text-align: center;
   flex-wrap: wrap;
   flex-direction: column;
   height: auto;
   min-height: 50vh;
-  align-items:flex-end;
+
 }
 
 #landing-title {
@@ -167,15 +168,18 @@ main {
   display: flex;
   justify-content: center;
 }
+
 #join-button {
-  margin: 0 auto;
-  padding: 2%;
-  background-color: var(--clr-card);
+  margin-top: 25px;
+  padding: 15px;
+  margin-left: 20px;
+  margin:  auto;
+  background-color: var(--clr-accent2);
   text-decoration: none;
   font-size: var(--font-size-main);
   color: var(--clr-text);
   display: flex;
-  width: 100px;
+  width: 150px;
   justify-content: center;
   border-radius: 10px;
   transition: 0.3s ease;
@@ -208,7 +212,18 @@ main {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
   transform: scale(1.05);
 }
-
+#card-gettoknow {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+#card-events {
+  background-color:rgba(255,170, 0, 0.3) ;
+}
+#card-creators {
+  background-color:rgba(0, 0, 0, 0.15);
+}
+#card-signup {
+  background-color:rgba(246, 255, 0, 0.3) ;
+}
 .page-title {
   font-size: var(--font-size-big-title);
   font-family: var(--font-primary);
