@@ -10,8 +10,8 @@
     <section id="landing">
         <h1 id="landing-title">WIKI-PRIDE</h1>
         <h2 id="landing-slogan">BE PART OF THE MOVE</h2>
-        <div class="button-container">
-            <a id="join-button" href="" aria-label="access the sign up form">JOIN US!</a>
+        <div id="join-button">
+            <a class="nav-link" href="{% url 'sign' %}" aria-label="access the sign up form">JOIN US!</a>
         </div>
     </section>
 
@@ -21,17 +21,17 @@
                 <h3 class="card-title">GET TO KNOW</h3>
             </a>
         </div>
-        <div class="card-container">
+        <div class="card-container" id="card-events">
             <a class="nav-link" href="{% url 'events' %}" aria-label="navigate to the 'events' webpage">
                 <h3 class="card-title">EVENTS</h3>
             </a>
         </div>
-        <div class="card-container">
+        <div class="card-container" id="card-creators">
             <a class="nav-link" href="{% url 'us' %}" aria-label="navigate to the 'who are we?' webpage">
                 <h3 class="card-title">CREATORS</h3>
             </a>
         </div>
-        <div class="card-container">
+        <div class="card-container" id="card-signup">
             <a class="nav-link" href="{% url 'sign' %}" aria-label="navigate to the 'sign-up' webpage">
                 <h3 class="card-title">SIGN UP</h3>
             </a>
