@@ -32,6 +32,10 @@ In chronological order
 
 [Ready to implement wireframe](./wiki_pride_app/static/images/finalWireframes.pdf)
 
+### Why Django, HTML and CSS were used
+
+As half of the team appeared to be able to use Django and bootstrap the initial plan was to use Django and Bootstrap 
+
 ### 5 planes of UX design
 
 1. STRATEGY (what do we want to achieve with our project):
@@ -96,13 +100,13 @@ The above is the basis of the original design of the site to which we have maint
 
 The flag for all of the LBGTQIA+ community is bright versions of the colours red, orange, yellow, green, blue and purple. Therefore, we decided that these colours should be the ones that we retained to use throughout the site. For simplicity and as there are slightly different shades on different prints of the flat it was decided to use the named colours that are provided in css.
 
-White was chosen as the background colour during the Final wireframes development to avoid any risk of clash of colours as with such a vibrant colour scheme it would potentially risk clash if a coloured or patterned background was chosen.
+Snow (off white) was chosen as the background colour during the Final wireframes development to avoid any risk of clash of colours as with such a vibrant colour scheme it would potentially risk clash if a coloured or patterned background was chosen.
 
 ### Cards
 
 To retain consistency across all pages it was decided that all the pages would be based on the cards visual. All information would be put onto cards on a white background so that whichever colour the cards were there was no clash.
 
-There was the intention that these cards would be created/animated with expand etc using bootstrap, unfortunately the member of the team that was expected to be able to complete this coding was unavailable and it was created using CSS, which reduced the functionality of these cards.
+There was the intention that these cards would be created/animated with expand etc using bootstrap, unfortunately the member of the team that was expected to be able to complete this coding was unavailable and it was created using CSS, which reduced the functionality of these cards from the original design.
 
 ## Features
 
@@ -110,7 +114,7 @@ There was the intention that these cards would be created/animated with expand e
 
 #### Landing/Index page
 
-#### Community page
+We wanted this to be a bright welcoming page which was bold without clutter so that you could choose using the cards (or nav links) which part of the wiki you were interested in. Ultimately the wiki was going to have lots of pages and to direct someone to something specific on the landing page wasn't the aim of the site.
 
 #### Events page
 
@@ -135,7 +139,15 @@ There was the intention that these cards would be created/animated with expand e
 
 ## Bugs
 
+1.Git
+
 Most of the challenges of the team were based around using Git in a collaborative manner as the team had only one active member who had used Git collaboratively previously and some of the members hadn't used Git at all.
+
+We had merge conflicts which were resolved through manually going through the code and selecting the correct items either in Github or the IDE depending on where the merge conflict appeared.
+
+As each contributor set up their own (or several of their own - depending on the individuals preferred working method) branches, we had problems where restarts of computers or IDE's had returned them to the main branch and therefore needed to switch to their own branch again.
+
+
 
 
 
