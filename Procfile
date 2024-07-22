@@ -1,1 +1,1 @@
-web: gunicorn wiki_pride.wsgi --log-file -
+web: gunicorn wiki_pride.wsgi 
