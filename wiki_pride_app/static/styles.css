@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --clr-background: snow;
   --clr-card: white;
-  --clr-text: #1e1e1e;
+  --clr-text: black;
   --clr-accent1: red;
   --clr-accent2: orange;
   --clr-accent3: yellow;
   --clr-accent4: green;
   --clr-accent5: blue;
   --clr-accent6: purple;
-  --clr-shadow: rgba(0.2, 0.2, 0.2, 0.5)
+  --clr-shadow: rgba(0.2, 0.2, 0.2, 0.5);
 
   --border-radius-sm: 4px;
   --border-radius-md: 8px;
@@ -21,11 +22,12 @@
   --box-shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.19);
 
   --font-primary: 'Jost', Arial, sans-serif;
-  --font-secondary: 'Georgia', serif;
+  --font-secondary: 'Montserrat', serif;
 
   --font-size-base: 16px;
-  --font-size-small: 14px;
-  --font-size-large: 18px;
+  --font-size-main: 22px;
+  --font-size-sub-title: 40px;
+  --font-size-big-title: 60px;
 
   --line-height-base: 1.5;
   --line-height-tight: 1.2;
@@ -38,9 +40,7 @@
   padding: 0;
 
   /*dimensions*/
-  width: 100%;
   box-sizing: border-box;
-
 
   /*box*/
   /* background-color: var(--clr-background); */
@@ -48,18 +48,26 @@
   /*text*/
   font-family: var(--font-secondary);
   color: var(--clr-text);
-  text-decoration:none;
+  text-decoration: none;
+  font-size: var(--font-size-base);
 }
 
-
+html {
+  background-color: var(--clr-background);
+  height: 100%;
+}
 body {
+  /*box*/
+  background-color: var(--clr-background);
+  max-width: 2500px;
+  overflow-x: hidden;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
-main {
-  flex-grow: 1;
-}
+
 
 /* Navigation bar*/
 
@@ -85,7 +93,6 @@ main {
   /* text-decoration: none;
   position:relative; */
   color: black;
-  font-size: 25px;
   font-weight: bold;
   /* display: inline-block;
   gap: 10px; */
@@ -97,23 +104,21 @@ main {
   width: 0;
   height: 2px; 
   left: 0;
-  bottom: -2px; 
-  background-color: orange; 
-  transition: width 0.3s; 
-}
+  bottom: -2px; /* Position the underline just below the text */
+  background-color: var(--clr-accent2); /* Color of the underline */
+  transition: width 0.3s; /* Animation effect */
 
+}
 .nav-link:hover::after {
   background-color: orange;
   width: 100%;
 }
-/* .nav-link:hover {
-  background-color: orange;
-} */
 /* Footer */
 .footer {
+  padding: 20px 0;
+  text-align: center;
   background-image: linear-gradient(to right, purple, lightblue);
   color: white;
-  padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -126,105 +131,115 @@ main {
 
 .footer .social-icon {
   margin: 0 10px;
-  color: black;
+  color: var(--clr-text);
+  font-size: var(--font-size-big-title);
   text-decoration: none;
-  font-size: 24px;
 }
+
 .footer .social-icon:hover {
   color: orange;
 }
-/* The history timeline (the vertical ruler) */
-.timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-  }
-  
-  /* Container around content */
-  .historycontainer {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-  }
-  
-  /* The circles on the timeline */
-  .historycontainer::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid #FF9F55;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  /* Place the container to the left */
-  .historyleft {
-    left: 0;
-  }
-  
-  /* Place the container to the right */
-  .historyright {
-    left: 50%;
-  }
-  
-  /* Add arrows to the left container (pointing right) */
-  .historyleft::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .historyright::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-  
-  /* Fix the circle for containers on the right side */
-  .historyright::after {
-    left: -16px;
-  }
-  
-  /* The actual content */
-  .historycontent {
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
-  }
-  
+
+main {
+  flex: 1; /* Takes up remaining space */
+  padding: 30px 90px;
+}
+
+#landing {
+  padding: 5%;
+  background: url('images/photos/markus-spiske-35uwVjgLVLQ-unsplash.jpg') no-repeat center/cover;
+  border-radius: var(--border-radius-lg);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: auto;
+  min-height: 50vh;
+  align-items:flex-end;
+}
+
+#landing-title {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-big-title);
+  padding: 5%;
+}
+#landing-slogan {
+  font-size: var(--font-size-sub-title);
+  display: flex;
+  justify-content: center;
+}
+#join-button {
+  margin: 0 auto;
+  padding: 2%;
+  background-color: var(--clr-card);
+  text-decoration: none;
+  font-size: var(--font-size-main);
+  color: var(--clr-text);
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#join-button:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+#landing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5%;
+  gap: 1rem;
+}
+.card-container {
+  min-height: 150px;
+  width: 250px;
+  display: flex;
+  align-items: flex-end;
+  background-color: var(--clr-card);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  border-radius: var(--border-radius-lg);
+  transition: 0.3s ease;
+  flex-direction: column;
+}
+.card-container:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+
+.page-title {
+  font-size: var(--font-size-big-title);
+  font-family: var(--font-primary);
+}
+
+.gettoknow-section {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 1%;
+}
+
+#gettoknow-section1 {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+#gettoknow-section2 {
+  background-color: rgba(255, 170, 0, 0.3);
+}
+
+#gettoknow-section3 {
+  background-color: rgba(246, 255, 0, 0.3);
+}
+
+.title {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-sub-title);
+  padding: 10px;
+}
 
 /*Styles for the sign.html */
 .sign-container {
@@ -302,7 +317,6 @@ input[type="text"], input[type="email"], input[type="password"] {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
 .vision {
   display: flex;
   flex-direction: column;
@@ -370,17 +384,19 @@ input[type="text"], input[type="email"], input[type="password"] {
 
 @media (min-width: 768px) {
   .team-member {
-      flex: 0 0 48%;
-      margin-bottom: 40px;
+    flex: 0 0 48%;
+    margin-bottom: 40px;
   }
 
   .team-member:nth-child(odd) {
-      margin-right: 4%;
+    margin-right: 4%;
   }
 
   .team-member:nth-child(even) {
-      margin-right: 0;
+    margin-right: 0;
   }
+
+
   .nav-link:hover {
     text-align: center;
   }
