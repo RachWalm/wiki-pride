@@ -198,6 +198,7 @@ main {
 }
 .card-container {
   min-height: 150px;
+  background-color: rgba(255, 0, 0, 0.3);
   width: 250px;
   display: flex;
   align-items: flex-end;
@@ -211,6 +212,12 @@ main {
 .card-container:hover {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
   transform: scale(1.05);
+}
+.card-container img {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+  border-radius: var(--border-radius-lg); 
 }
 #card-gettoknow {
   background-color: rgba(255, 0, 0, 0.3);
@@ -230,6 +237,7 @@ main {
 }
 
 .gettoknow-section {
+  background-color: rgba(255, 0, 0, 0.3);
   display: flex;
   flex-direction: row;
   height: auto;
@@ -396,6 +404,17 @@ input[type="text"], input[type="email"], input[type="password"] {
 .team-member:nth-child(even) {
   margin-right: 0;
 }
+@media (min-width: 1200px) {
+  .gettoknow-section {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .gettoknow-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 @media (min-width: 768px) {
   .team-member {
@@ -414,6 +433,9 @@ input[type="text"], input[type="email"], input[type="password"] {
 
   .nav-link:hover {
     text-align: center;
+  }
+  .gettoknow-section {
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }
