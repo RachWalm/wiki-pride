@@ -4,8 +4,8 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<body>
-<main>
+
+<main class="flex-grow-1">
 
     <section id="landing">
         <h1 id="landing-title">WIKI-PRIDE</h1>
@@ -27,6 +27,7 @@
             </a>
         </div>
         <div class="card-container">
+
             <a class="nav-link" href="{% url 'events' %}" aria-label="navigate to the 'events' webpage">
                 <h3 class="card-title">EVENTS</h3>
             </a>
@@ -43,5 +44,5 @@
         </div>
     </section>
 </main>
-</body>
+
 {% endblock %}
