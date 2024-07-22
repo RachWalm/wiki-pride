@@ -46,13 +46,20 @@
             </div>
           </div>
         </nav>
-      </div>
-    </div>
-    <main class="main-container">
-      {% block content %}{% endblock %}
-    </main>
-    <footer class="footer">
-      <div class="footer-container">
+
+    </section>
+    <!--<div class="header-content">
+      <h1>Welcome to Wiki Pride</h1>
+      <a href="{% url 'sign' %}" class="btn btn-primary">Join Us</a>
+    </div>-->
+  </div>
+
+    {% block content %}{% endblock %}
+
+    <footer class="footer text-center">
+      <div class="container-footer">
+        <div class="row">
+          <div class="col">
             <a href="https://facebook.com" class="social-icon" target="_blank">
               <i class="fab fa-facebook-f"></i>
             </a>
