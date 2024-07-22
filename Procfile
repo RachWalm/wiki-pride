@@ -1,1 +1,1 @@
-web: gunicorn wiki_pride.wsgi 
+web: gunicorn wiki_pride.wsgi:application
